@@ -1,0 +1,6 @@
+cfg=/etc/conf.d/tmpfs-sync
+
+post_install() {
+  cp -n /usr/share/tmpfs-sync/tmpfs-sync.cfg $cfg
+  echo "Please set variables in $cfg before use."
+  }
